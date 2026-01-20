@@ -1,0 +1,31 @@
+:root {
+  --brand-primary: #0d6efd;
+  --brand-hero: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+}
+
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif; }
+
+.hero {
+  background: var(--brand-hero);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.brand-logo { width: 40px; height: 40px; object-fit: cover; border-radius: 8px; }
+
+.availability { background: #f8f9fa; border: 1px dashed #dee2e6; }
+
+.budget .card-body { background: #f1f3f5; border-radius: .75rem; }
+
+.card { border-radius: .75rem; }
+.badge { border-radius: .5rem; }
+
+.form-check-input:checked { background-color: var(--brand-primary); border-color: var(--brand-primary); }
+
+/* subtle hover */
+#submitBooking { transition: transform .15s ease, box-shadow .15s ease; }
+#submitBooking:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(13,110,253,.25); }
+
+/* summary list */
+.summary-list { list-style: none; padding-left: 0; }
+.summary-list li { padding: .35rem 0; border-bottom: 1px solid #eee; }
+.summary-list li:last-child { border-bottom: 0; }
